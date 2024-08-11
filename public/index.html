@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Moneytracker</title>
+  </head>
+  <body>
+    <form action="/add" method="post">
+      <h1>MONEY TRACKER APP</h1>
+      <div class="input-section">
+        <label for="category_sel">Category:</label>
+        <select id="category_sel" name="category_sel">
+          <option value="expense">Expense</option>
+          <option value="income">income</option>
+        </select>
+        <label for="amount_inp">Amount:</label>
+        <input type="number" id="amount_inp" name="amount_inp" />
+        <label for="info_inp">Info:</label>
+        <input type="text" id="info_inp" name="info_inp" />
+        <label for="date_inp">Date:</label>
+        <input type="date" id="date_inp" name="date_inp" />
+        <button id="add_btn">Add</button>
+      </div>
+    </form>
+    <div class="list">
+      <h3>Expenses and Income List</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Info</th>
+            <th>Date</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="Expense-income-body"></tbody>
+        <tfoot>
+          <td>Total:</td>
+          <td id="total-amount"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tfoot>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

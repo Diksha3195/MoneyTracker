@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(124, 124, 190);
+  font-family: "Times New Roman", Times, serif;
+  margin: 10px;
+}
+h1,
+h3 {
+  text-align: center;
+}
+.input-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-section label {
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+.input-section input {
+  padding: 6px;
+  margin-right: 6px;
+}
+.input-section button {
+  padding: 10px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: lightgreen;
+  color: black;
+}
+tfoot td {
+  font-weight: bold;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
